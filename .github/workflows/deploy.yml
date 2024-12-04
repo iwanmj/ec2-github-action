@@ -39,7 +39,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
-          ECR_REGISTRY: grande/server_base
+          ECR_REGISTRY: rdo/hello-world
           IMAGE_TAG: latest
         run: |
           echo $ECR_REPOSITORY/$ECR_REGISTRY:$IMAGE_TAG
